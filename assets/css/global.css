@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.main{
+    padding: 0.35rem;
+}
+
+@font-face{
+    font-family: 'neue machina';
+    src: url('/assets/font/NeueMachina-Light.otf');
+}
+

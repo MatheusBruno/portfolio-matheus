@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+}
+
+body{
     background-color: black;
     color: white;
 }
@@ -14,5 +17,35 @@
 @font-face{
     font-family: 'neue machina';
     src: url('/assets/font/NeueMachina-Light.otf');
+}
+
+.main::before{
+    content: '';
+    display: inline-block;
+    width: 140vw;
+    height: 100vh;
+    background-image: url(/assets/img/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.main::after{
+    content: '';
+    display: inline-block;
+    width: 140vw;
+    height: 100vh;
+    background-image: url(/assets/img/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
 }
 

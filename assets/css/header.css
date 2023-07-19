@@ -56,11 +56,11 @@
 }
 
 .information .job::before{
-    background-image: urlassets/img/job.svg);
+    background-image: url('../img/job.svg');
 }
 
 .information .email::before{
-    background-image: urlassets/img/email.svg);
+    background-image: url('../img/email.svg');
 }
 
 .information .phone a {
@@ -82,11 +82,11 @@
 }
 
 .information .location::before{
-    background-image: urlassets/img/location.svg);
+    background-image: url('../img/location.svg');
 }
 
 .information .phone::before{
-    background-image: urlassets/img/phone.svg);
+    background-image: url('../img/phone.svg');
 }
 @media only screen and (min-width: 600px) {
     .header .photo{

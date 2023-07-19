@@ -22,7 +22,7 @@ body{
 
 @font-face{
     font-family: 'neue machina';
-    src: url(assets/font/NeueMachina-Light.otf');
+    src: url('../font/NeueMachina-Light.otf');
 }
 
 .main::before{
@@ -30,7 +30,7 @@ body{
     display: inline-block;
     width: 140vw;
     height: 100vh;
-    background-image: urlassets/img/background.svg);
+    background-image: url('../img/background.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -45,7 +45,7 @@ body{
     display: inline-block;
     width: 140vw;
     height: 100vh;
-    background-image: urlassets/img/background.svg);
+    background-image: url('../img/background.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;

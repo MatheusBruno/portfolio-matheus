@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .photo{
@@ -19,13 +20,25 @@
     color: white;
 }
 
+.title a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: .25s;
+}
+
+.title a:hover{
+    transition: .25s;
+    color: #752aff;
+}
+
 .information {
     display: flex;
     flex-direction: column;
 }
 
 .information p {
-    margin: 0;
+    margin-bottom: 1px;
     font-family: 'Open Sans';
     display: flex;
     flex-direction: row;
@@ -50,10 +63,60 @@
     background-image: url(/assets/img/email.svg);
 }
 
+.information .phone a {
+    text-decoration: none;
+    color: white;
+    transition: .25s;
+}
+
+.information .email a {
+    text-decoration: none;
+    color: white;
+    transition: .25s;
+}
+
+.information .phone a:hover,
+.information .email a:hover {
+    transition: .25s;
+    color: #752aff;
+}
+
 .information .location::before{
     background-image: url(/assets/img/location.svg);
 }
 
 .information .phone::before{
     background-image: url(/assets/img/phone.svg);
+}
+@media only screen and (min-width: 600px) {
+    .header .photo{
+        width: 27%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header .photo{
+        grid-area: photo;
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .header .title{
+        grid-area: title;
+        width: 112%;
+        text-align: left;
+    }
+
+    .header .information{
+        grid-area: information;
+    }
+
+    .header{
+        display: grid;
+        max-width: 90%;
+        grid-template-areas:
+        "photo photo title"
+        "photo photo information";
+    }
+    
 }
